@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Romanzier</title>
+  </head>
+  <body>
+    <div class="container well">
+
+      <h1>Romanize arabic numbers</h1>
+      <form id="romanize">
+        <div class="form-group">
+          <input id="number" type="text" placeholder="enter an arabic number">
+        </div>
+          <button type="submit" class="btn btn-danger">Romanize it</button>
+      </form>
+      <div class='well' id="result">
+        <h3 class="response">Your arabic number of <strong><span class="number text-warning"></span></strong> is <strong><span class="result text-success"></span></strong> in Roman numerals!</h3>
+      </div>
+      <div  class="well" id="error">
+        <h3>Please enter a number less than 4000</h3>
+      </div>
+    </div>
+  </body>
+</html>
