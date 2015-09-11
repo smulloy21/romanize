@@ -18,15 +18,20 @@ $(document).ready(function() {
   $("form#romanize").submit(function(event){
     $("#result").hide();
     $("#error").hide();
+    $("#error2").hide();
     var number = parseInt($("input#number").val());
     var result = romanize(number);
 
     $(".number").text(number);
     $(".result").text(result);
-    if (result <= 0 || number >= 4000) {
+    if (result <= 0) {
       $("#error").show();
+    } else if (number >= 4000) {
+      $("#error2").show();
     } else {
       $("#result").show();
+      var body = document.getElementsByTagName('body')[0];
+      body.style.background = 'url(css/img/battle.jpg) top center no-repeat';
     }
     event.preventDefault();
   });

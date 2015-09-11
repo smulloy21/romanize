@@ -1,7 +1,27 @@
+html {
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  background: url('img/colosseum.jpg') top center no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: rgba(0,0,0,.7);
+  margin: 5rem;
+  text-align: center;
+}
+body, .container, h1, h2, h3, input, button, form, span {
+  font-family: 'IM Fell Great Primer SC', serif;
+}
 #result {
   display: none;
 }
 
 #error {
+  display: none;
+}
+
+#error2 {
   display: none;
 }
