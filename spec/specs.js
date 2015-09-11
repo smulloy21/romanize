@@ -6,4 +6,8 @@ describe('romanize', function (){
   it("should convert from an arabic to a roman number", function (){
     expect(romanize(999)).to.eql("CMXCIX");
   });
+
+  it("should convert from an arabic to a roman number", function (){
+    expect(romanize(3999)).to.eql("MMMCMXCIX");
+  });
 });
